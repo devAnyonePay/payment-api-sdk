@@ -3,8 +3,8 @@
     This API feature is load / saving memory storage values by webhook-config.php html page
     When you want to save(POST) requires BasicAuth
 */
-    include 'basic_auth.php';
-    include 'shared_cache.php';
+    include(dirname(__FILE__) . '/basic_auth.php');
+    include(dirname(__FILE__) . '/shared_cache.php');
 
     use AnyonePayTest\TestCache;
 

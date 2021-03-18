@@ -1,4 +1,5 @@
 <?php
+// This is old version support only one-time, Deprecated 2021-01-25.
 
 include(dirname(__FILE__) . '/inbound_firewall.php');
 include(dirname(__FILE__) . '/shared_cache.php');
@@ -124,7 +125,7 @@ try {
 
   // ---------------------------------------------------------------------------------------------------------------------
   $dt=array('result' => "SUCCESS");  // If you want to stop continueing this payment, write another value, such as "REJECT"
-  $dt['webhookSeq'] = json_decode($encData)->webhookSeq; // This parameter should be same with request.
+  $dt['paymentSeq'] = json_decode($encData)->paymentSeq; // This parameter should be same with request.
 
   // Let AnyonePay know THAT you are used what public key of Anyonepay provided.
   $output=array('publicKeySha1' => $pubSelectSha1);

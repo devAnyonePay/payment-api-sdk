@@ -1,5 +1,5 @@
 <?php
-    include 'basic_auth.php';
+    include(dirname(__FILE__) . '/basic_auth.php');
 ?>
 <html>
 
