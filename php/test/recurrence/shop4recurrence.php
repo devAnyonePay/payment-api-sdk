@@ -233,7 +233,19 @@ then these key pair regist at our config site of webhook.
 - (New) webhookUrl : http://testshop.anyonepay.ph/test/webhook.php?v=verifyOrCompletion&call=SANDBOX&pk=[SHA1 of merchant's new public key]"
                                 hint="Hint text"
                             ></v-textarea>
-                            
+                            <v-textarea
+                                name="input-7-1"
+                                label="Paymaya Test card Info."
+                                value="https://hackmd.io/@paymaya-pg/PaymentVault
+                                CARD TYPE	NUMBER	EXPIRY MONTH	EXPIRY YEAR	CSC/CVV	3-D Secure PASSWORD
+                                MASTERCARD	5123456789012346	12	2025	111	Not enabled
+                                MASTERCARD	5453010000064154	12	2025	111	secbarry1
+                                VISA	4123450131001381	12	2025	123	mctest1
+                                VISA	4123450131001522	12	2025	123	mctest1
+                                VISA	4123450131004443	12	2025	123	mctest1
+                                VISA	4123450131000508	12	2025	111	Not enabled"
+                                hint="Hint text"
+                            ></v-textarea>
                             <v-card>
                                 <v-card-title primary-title>
                                 <div>

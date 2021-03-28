@@ -1,5 +1,5 @@
 <?php
-    include(dirname(__FILE__) . '/basic_auth.php');
+    include(dirname(__FILE__) . '/../basic_auth.php');
 
     $testshop_clientId=$_SERVER['anyonepay_testshop_stage_clientId'];
     $testshop_clientPw=$_SERVER['anyonepay_testshop_stage_clientPw'];
